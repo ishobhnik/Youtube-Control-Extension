@@ -89,7 +89,7 @@ function controlVideoLoop(startTime, endTime, loopCount, loopDelay) {
                 if (loopCounter < loopCount) {
                     setTimeout(playSegment, loopDelay * 1000);
                 } else {
-                    video.currentTime = endTime; // Continue playing from end
+                    video.currentTime = endTime;
                     video.play();
                 }
                 video.removeEventListener("timeupdate", checkTime);
@@ -107,7 +107,7 @@ function previewVideoSegment(startTime, endTime) {
     const video = document.querySelector("video");
 
     if (video) {
-        video.currentTime = startTime;  // Start the video at the start time
+        video.currentTime = startTime;
         video.play();
 
         // Stop the video once it reaches the end time
