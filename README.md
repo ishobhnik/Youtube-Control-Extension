@@ -18,7 +18,7 @@ If you are not familiar with the Chrome Web Store, or if you want to install the
 1. Download the extension source code:
    - Download the ZIP of this repository or clone it using Git:
      ```bash
-     git clone https://github.com/yourusername/YouTube-Video-Control-Extension.git
+     git clone https://github.com/ishobhnik/YouTube-Video-Control-Extension.git
      ```
 
 2. Open Chrome and navigate to the Extensions page:
@@ -63,4 +63,4 @@ To get started:
 1. Fork the repository.
 2. Clone your fork to your local machine:
    ```bash
-   git clone https://github.com/yourusername/YouTube-Video-Control-Extension.git
+   git clone https://github.com/ishobhnik/YouTube-Video-Control-Extension.git
