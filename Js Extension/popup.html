@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced Video Control</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Video Segment Control</h2>
+        <div class="section">
+            <label>Start Time:</label>
+            <div class="time-input">
+                <input type="number" id="startHours" placeholder="HH" min="0"> :
+                <input type="number" id="startMinutes" placeholder="MM" min="0" max="59"> :
+                <input type="number" id="startSeconds" placeholder="SS" min="0" max="59">
+            </div>
+            <label>End Time:</label>
+            <div class="time-input">
+                <input type="number" id="endHours" placeholder="HH" min="0"> :
+                <input type="number" id="endMinutes" placeholder="MM" min="0" max="59"> :
+                <input type="number" id="endSeconds" placeholder="SS" min="0" max="59">
+            </div>
+            <button id="previewSegment" class="button">Preview Segment</button>
+        </div>
+
+        <h2>Loop Settings</h2>
+        <div class="section">
+            <label for="loopCount">Number of Loops:</label>
+            <input type="number" id="loopCount" min="1" value="1">
+            <label for="loopDelay">Loop Delay (seconds):</label>
+            <input type="number" id="loopDelay" min="0" value="0">
+            <button id="applyLoop" class="button">Apply Loop</button>
+        </div>
+
+        <h2>Playback Speed</h2>
+        <div class="section">
+            <label for="speed">Playback Speed:</label>
+            <input type="number" id="speed" step="0.1" value="1">
+            <button id="applySpeed" class="button">Apply Speed</button>
+        </div>
+
+        <p id="statusMessage"></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
